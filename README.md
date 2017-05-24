@@ -1,7 +1,7 @@
 Conversant Advertiser SDK - Android
 ==================
 
-The Conversant Advertiser SDK provides a simple way to gather information on how customers use your application, and allows Conversant to subsequently tailor relevant and meaningful messages to your customers based on their interaction and purchase history.
+The Conversant Advertiser SDK provides a simple way to gather information on how customers use your application, and allows Conversant to subsequently tailor relevant and meaningful messages to your users based on their interaction and purchase history. The following documentation provides a high-level overview of integrating the Conversant Advertiser SDK - your Conversant Client Integration Engineer will provide a customized integration document outlining events and data for your app and unique purpose.
 
 ## Getting Started
 
@@ -189,7 +189,7 @@ receiver.onReceive(context, intent);
 
 ## RELEASE NOTES
 
-For the latest, up-to-date information on iOS SDK features and bug fixes, visit our iOS SDK Release Notes [https://github.com/conversant/conversant-ios-sdk/releases](https://github.com/conversant/conversant-ios-sdk/releases)
+For the latest, up-to-date information on iOS SDK features and bug fixes, visit our iOS SDK Release Notes [https://github.com/conversant/Advertiser-SDK-Android/releases](https://github.com/conversant/Advertiser-SDK-Android/releases)
 
 ## LICENSE
 
