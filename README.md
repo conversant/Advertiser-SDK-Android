@@ -189,7 +189,7 @@ receiver.onReceive(context, intent);
 
 ## RELEASE NOTES
 
-For the latest, up-to-date information on iOS SDK features and bug fixes, visit our iOS SDK Release Notes [https://github.com/conversant/Advertiser-SDK-Android/releases](https://github.com/conversant/Advertiser-SDK-Android/releases)
+For the latest, up-to-date information on Android SDK features and bug fixes, visit our Android SDK Release Notes [https://github.com/conversant/Advertiser-SDK-Android/releases](https://github.com/conversant/Advertiser-SDK-Android/releases)
 
 ## LICENSE
 
