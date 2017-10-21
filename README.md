@@ -35,7 +35,7 @@ android:value="@integer/google_play_services_version"/>
 ```
 
 ###### Notes
-* Be sure to replace ‘CTM Site ID’ with your the Conversant Site ID provided by your Client Integration Engineer
+* Be sure to replace 'CTM Site ID' with your the Conversant Site ID provided by your Client Integration Engineer
 * If the inclusion of '@integer/google_play_services_version' gives you an error, the Google Play Services library may not be installed correctly in your development environment
 
 ### Initializing the SDK
@@ -98,7 +98,7 @@ new String[] {"event-1", "event-2"}, "group1/group2")
 Each event includes 3 types of data
 * **Event Names** (Required) Used to identify specific events that occur in the application. Each event object may contain multiple event names.
 * **Event Group** (Required) Used to hierarchically organize events within the application. Multiple groups may be delimited with forward slash '/'
-* **Extra Data** (Optional) Used to pass any arbitrary data that may be necessary or useful to track along with the event(s) and Group(s)
+* **Extra Data** (Optional) Used to pass any arbitrary data that may be necessary or useful to track along with the event(s) and group(s)
 
 It is recommended that you work with your business unit to determine which events should be tracked, and how best to organize the application in to groups. When in doubt, liberally adding tracking for events is always recommended, as the Conversant Advertiser SDK is designed to only communicate events that have tracking assigned to them by your Client Integration Engineer.
 
@@ -116,7 +116,7 @@ sdk.fireEvent(event);
 A log-in event example which is sending the users MD5 email hash as a variable:
 ```
 final CNVRTagSyncEvent event = new CNVRTagSyncEvent.Builder( 
-new String[] {"login","login-success") 
+new String[] {"login","login-success"}, "login") 
 .withExtra("email-hash", emailhash) 
 .build(); 
 ```
@@ -125,7 +125,7 @@ A retail event example for view of current product:
 ```
 final CNVRTagSyncEvent event = new CNVRTagSyncEvent.Builder( 
 new String[] {"product-view"}, "category/subcategory/product-page") 
-.withExtra("category", “Women”) 
+.withExtra("category", "Women") 
 .withExtra("subcategory", "Shoes") 
 .withExtra("productSKU", "AB1234") 
 .build(); 
@@ -133,7 +133,7 @@ new String[] {"product-view"}, "category/subcategory/product-page")
 
 ### Capturing the Google INSTALL_REFERRER value
 
-Google provides a [mechanism for capturing install referrer information](https://developers.google.com/analytics/devguides/collection/android/v4/campaigns) by setting a referrer parameter value in the Google Play Store’s app URL. This referrer value can be used for example, to measure campaign performance or help determine the vendor that drove the install. Google Play Store broadcasts this value, if available, to the app after an install completes. 
+Google provides a [mechanism for capturing install referrer information](https://developers.google.com/analytics/devguides/collection/android/v4/campaigns) by setting a referrer parameter value in the Google Play Store's app URL. This referrer value can be used for example, to measure campaign performance or help determine the vendor that drove the install. Google Play Store broadcasts this value, if available, to the app after an install completes. 
 
 It is important to note, though, that due to a limitation with Google's implementation, the referrer value can only be passed on installs initiated from the app-based version of Google Play Store, NOT from the web-based version.
 
